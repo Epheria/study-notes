@@ -3,8 +3,11 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
-- file: mymarkdown
+parts:
+  - caption: Machine Learning
+    chapters:
+      - file: markdown
+      - file: ML/Untitled
+  - caption: Python
+    chapters:
+    - file: python-notebooks

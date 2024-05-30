@@ -1,9 +1,9 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Sehyup`s ML/DL Study Books
+title: "Sehyup ML Book" # not working anymore
 author: Sehyup
-logo: logo.png
+logo: images/profile.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -28,5 +28,15 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
+  favicon: "images/favicons/favicon.ico"
   use_issues_button: true
   use_repository_button: true
+  
+launch_buttons:
+  notebook_interface: jupyterlab
+
+sphinx:
+   config:
+         html_theme_options:
+          logo:
+            text: "ML/DL Study Book" # This is the left navbar Title
